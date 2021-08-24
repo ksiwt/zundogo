@@ -9,7 +9,7 @@ import (
 const (
 	zun  = "ズン"
 	doko = "ドコ"
-	kiyodhi = "キ・ヨ・シ！"
+	kiyoshi = "キ・ヨ・シ！"
 )
 
 var zundoko = []string{zun, doko}
@@ -34,7 +34,7 @@ func main() {
 	for {
 		select {
 		case <- quit:
-			fmt.Println(kiyodhi)
+			fmt.Println(kiyoshi)
 			return
 		default:
 			go func() {
